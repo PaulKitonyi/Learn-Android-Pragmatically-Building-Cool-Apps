@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="declaration_question"><b>Crypto Money</b> came to kick the old way of
+        of doing centralised transactions.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="true_text">true</string>
+    <string name="false_text">false</string>
+
+    <string name="right_answer">Wow You Got it!</string>
+    <string name="wrong_answer">That\'s Wrong</string>
+
+    <string name="question1"><b>Satoshi Nakamoto</b> founded bitcoin and crypto currency?</string>
+    <string name="question2">Is <b>Satoshi Nakamoto</b> known?</string>
+    <string name="question3">The <b>founder</b> of <b>Ethereum</b>  is not known.</string>
+    <string name="question4"><b>Paul Kitonyi</b> is the founder of Ethereum?</string>
+    <string name="question5">Is <b>Ethereum</b> open source?</string>
+    <string name="question6">Is <b>Bitcoin</b> open source?</string>
+    <string name="question7">Can anyone fork <b>Ethereum</b>?</string>
+    <string name="question8">Can anyone fork <b>Bitcoin</b> and make it better?</string>
+    <string name="question9">Did <b>Vitalic Buterin</b> fork bitcoin to develop his cryto platform
+        ?</string>
+    <string name="question10">Apart from <b>Bitcoin</b> And <b>Ethereum</b> Do We have any other
+        Crypto Platforms?</string>
+    <string name="next_button">Next</string>
+
 </resources>
