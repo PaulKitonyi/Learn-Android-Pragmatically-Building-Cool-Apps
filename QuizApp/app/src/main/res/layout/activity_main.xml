@@ -44,15 +44,31 @@
 
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/next_btn"
-        android:layout_marginTop="80dp"
-        android:contentDescription="@string/next_button"
-        android:textColor="@android:color/white"
-        android:background="@android:color/black"
-        android:src="@android:drawable/ic_media_next"
-        android:text="@string/next_button"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription=""
+            android:background="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageButton
+            android:id="@+id/next_btn"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/next_button"
+            android:background="@android:color/black"
+            android:src="@android:drawable/ic_media_next"
+            android:text="@string/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 </LinearLayout>

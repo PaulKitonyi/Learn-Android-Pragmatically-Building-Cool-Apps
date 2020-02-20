@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button noButton;
     private TextView questiontextView;
     private ImageButton nextButton;
+    private ImageButton previousButton;
 
     private int currentQuestionIndex = 0;
 
@@ -41,10 +42,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         noButton = findViewById(R.id.no_button);
         questiontextView = findViewById(R.id.answer_text_view);
         nextButton = findViewById(R.id.next_btn);
+        previousButton = findViewById(R.id.previous);
 
         yesButton.setOnClickListener(this);
         noButton.setOnClickListener(this);
         nextButton.setOnClickListener(this);
+        previousButton.setOnClickListener(this);
     }
 
     @Override
@@ -59,8 +62,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.next_btn:
-                currentQuestionIndex = (currentQuestionIndex + 1) % questions.length;
-                updateQuestion();
+                if(currentQuestionIndex != questions.length - 1) {
+                    currentQuestionIndex = (currentQuestionIndex + 1) % questions.length;
+                    updateQuestion();
+                }
+
+                break;
+
+            case R.id.previous:
+                if(currentQuestionIndex > 0) {
+                    currentQuestionIndex = (currentQuestionIndex - 1) % questions.length;
+                    updateQuestion();
+                }
 
         }
     }
@@ -71,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void isAnswerTrue(boolean rigthAnswer) {
         boolean answerIsTrue = questions[currentQuestionIndex].isAnswer();
-        int toastMessageId = 0;
+        int toastMessageId;
 
         if (rigthAnswer == answerIsTrue) {
             toastMessageId = R.string.right_answer;
