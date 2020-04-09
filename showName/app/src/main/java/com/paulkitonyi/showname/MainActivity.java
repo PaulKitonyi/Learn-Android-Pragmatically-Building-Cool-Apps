@@ -1,8 +1,10 @@
--package com.paulkitonyi.showname;
+package com.paulkitonyi.showname;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.paulkitonyi.showname.R;
 
 public class MainActivity extends AppCompatActivity {
 
